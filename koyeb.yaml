@@ -1,21 +1,24 @@
-name: auto-accept-bot
+# koyeb.yml
 
+name: telegram-webhook-bot
+region: "fra1"  # Choose a region that suits you (e.g., fra1, sgp1, etc.)
 services:
-  - name: pyrogram-bot
-    project: auto-accept
-    type: docker
-    dockerfile_path: ./Dockerfile
-    ports:
-      - port: 8080
-        protocol: http
+  - name: bot
+    image: your_docker_image_name  # Use the image name (for example: username/telegram-webhook-bot)
+    port: 8080
     env:
-      - key: API_ID
-        value: ${API_ID}
-      - key: API_HASH
-        value: ${API_HASH}
-      - key: BOT_TOKEN
-        value: ${BOT_TOKEN}
-      - key: MONGO_URI
-        value: ${MONGO_URI}
-      - key: OWNER_ID
-        value: ${OWNER_ID}
+      API_ID: "<your_api_id>"
+      API_HASH: "<your_api_hash>"
+      BOT_TOKEN: "<your_bot_token>"
+      MONGO_URI: "<your_mongo_uri>"
+      WEBHOOK_URL: "<your_webhook_url>"
+    plan: basic
+    scale:
+      count: 1
+    health_check:
+      path: "/health"
+      protocol: "HTTP"
+      port: 8080
+    dockerfile: Dockerfile  # Path to your Dockerfile
+
+# Optional: Add other services like MongoDB if using managed services

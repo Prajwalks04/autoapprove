@@ -3,3 +3,5 @@ tgcrypto==1.2.5
 pymongo[srv]==4.6.1
 python-dotenv==1.0.1
 flask
+fastapi==0.95.2
+uvicorn==0.22.0

@@ -1,0 +1,21 @@
+name: auto-accept-bot
+
+services:
+  - name: pyrogram-bot
+    project: auto-accept
+    type: docker
+    dockerfile_path: ./Dockerfile
+    ports:
+      - port: 8080
+        protocol: http
+    env:
+      - key: API_ID
+        value: ${API_ID}
+      - key: API_HASH
+        value: ${API_HASH}
+      - key: BOT_TOKEN
+        value: ${BOT_TOKEN}
+      - key: MONGO_URI
+        value: ${MONGO_URI}
+      - key: OWNER_ID
+        value: ${OWNER_ID}

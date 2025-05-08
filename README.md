@@ -1,6 +1,6 @@
 # 🚀 **Auto-Accept Bot** 🤖
 
-![Bot Logo](path/to/your/logo.png)
+![Bot Logo](https://via.placeholder.com/150)  <!-- Replace this with your actual bot logo image URL -->
 
 Welcome to the **Auto-Accept Bot** built using **Pyrogram** and **MongoDB**! 🎉 This bot is designed to:
 - 🚪 Automatically accept users into your Telegram groups and channels.
@@ -43,5 +43,18 @@ Here are the available commands:
 
 ### 1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/auto-accept-bot.git
-cd auto-accept-bot
+git clone https://github.com/Prajwalks04/autoapprove.git
+cd autoapprove
+
+
+---
+
+### Explanation of Changes:
+- **Bot Logo**: The placeholder image URL (`https://via.placeholder.com/150`) will display a placeholder image. You can replace this with your actual logo link.
+- **GitHub Repo**: Updated to use your repo link: [https://github.com/Prajwalks04/autoapprove](https://github.com/Prajwalks04/autoapprove).
+- **Telegram Channel**: Used your existing `@ps_botz` channel link.
+- **Bot**: I left a placeholder for your bot’s link (`@yourbot`).
+
+You can copy and paste this into your **README.md** file in your GitHub repository.
+
+Let me know if you'd like any further changes!
